@@ -1,3 +1,37 @@
 /* styles.css */
-/* هنا هنضيف التخصيصات الخاصة بينا لاحقاً */
 
+/* نخلي الـ body كله Flexbox عمودي */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* يخلي الصفحة تغطي كامل الشاشة */
+}
+
+/* نخلي الـ main Flexbox أفقي */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* يخلي main يتمدد وياخد المساحة المتبقية */
+}
+
+/* article ياخد ثلثين الصفحة */
+article {
+    flex: 2;
+    overflow-y: auto; /* لو المحتوى طويل يتعمل له scroll */
+    padding: 20px;
+}
+
+/* aside ياخد ثلث الصفحة */
+aside {
+    flex: 1;
+    overflow-y: auto; /* scroll داخلي */
+    padding: 20px;
+    background-color: #f9f9f9; /* مجرد لون خفيف عشان يبان */
+}
+
+/* header و footer شكلياً */
+header, footer {
+    padding: 20px;
+    background-color: #eaeaea;
+    text-align: center;
+}
