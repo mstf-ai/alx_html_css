@@ -1,4 +1,4 @@
-/* Reset بسيط */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* ========== HEADER ========== */
+/* HEADER */
 header {
   width: 100%;
   padding: 20px 40px;
@@ -23,7 +23,7 @@ header {
 }
 
 header .logo img {
-  height: 40px; /* عدّل الرقم حسب Figma */
+  height: 40px;
 }
 
 header nav ul {
@@ -40,23 +40,23 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #007bff; /* عدّل للون الرئيسي من Figma */
+  color: #b45eff;
 }
 
-/* ========== BANNER / HERO ========== */
+/* BANNER */
 .banner {
-  height: 80vh; /* أو حسب التصميم */
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url("images/banner.jpg") no-repeat center center/cover;
+  background: url("https://source.unsplash.com/1600x800/?technology,conference") no-repeat center center/cover;
   color: #fff;
   padding: 0 20px;
 }
 
 .banner h1 {
-  font-size: 3rem; /* عدّل حسب Figma */
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -67,65 +67,23 @@ header nav ul li a:hover {
 }
 
 .banner .btn {
-  background-color: #007bff; /* اللون الأساسي */
+  background-color: #b45eff;
   color: #fff;
   padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .banner .btn:hover {
-  background-color: #0056b3; /* درجة أغمق */
+  background-color: #8a3cff;
 }
 
-/* ========== QUOTES SECTION ========== */
-.quotes {
-  background-color: #f9f9f9; /* عدّل اللون حسب Figma */
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.quotes blockquote {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
-  position: relative;
-}
-
-.quotes blockquote::before {
-  content: "“";
-  font-size: 3rem;
-  color: #007bff; /* اللون الأساسي */
-  position: absolute;
-  left: -15px;
-  top: -10px;
-}
-
-.quotes blockquote::after {
-  content: "”";
-  font-size: 3rem;
-  color: #007bff;
-  position: absolute;
-  right: -15px;
-  bottom: -10px;
-}
-
-.quotes .author {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-}
-
-/* ========== VIDEOS SECTION ========== */
+/* VIDEOS */
 .videos {
   padding: 80px 20px;
-  background-color: #fff; /* أو اللون من Figma */
+  background-color: #fff;
   text-align: center;
 }
 
@@ -136,30 +94,63 @@ header nav ul li a:hover {
   color: #222;
 }
 
+.videos .section-title span {
+  background: linear-gradient(90deg, #b45eff, #ff80ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .video-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .video-card {
-  background: #f9f9f9; /* ممكن يكون white حسب Figma */
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 12px;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
 
 .video-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
-.video-card img {
+.video-thumbnail {
+  position: relative;
+}
+
+.video-thumbnail img {
   width: 100%;
-  height: auto;
   display: block;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(180, 94, 255, 0.8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-btn:hover {
+  background: #b45eff;
+  box-shadow: 0 0 20px #b45eff;
 }
 
 .video-card h3 {
@@ -172,4 +163,107 @@ header nav ul li a:hover {
   font-size: 0.95rem;
   color: #666;
   margin: 0 10px 20px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #b45eff;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  max-width: 500px;
+}
+
+.testimonial .quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.person-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.person-role {
+  font-style: italic;
+  color: #ddd;
+}
+
+/* MEMBERSHIP */
+.membership {
+  background-color: #0a1a2f;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.membership h2 span {
+  color: #b45eff;
+  font-weight: 700;
+}
+
+.membership-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.membership-item .icon {
+  font-size: 3rem;
+  color: #b45eff;
+  margin-bottom: 15px;
+}
+
+.membership-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.membership-item p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.btn-membership {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #b45eff, #8a3cff);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-membership:hover {
+  background: linear-gradient(90deg, #8a3cff, #b45eff);
 }
