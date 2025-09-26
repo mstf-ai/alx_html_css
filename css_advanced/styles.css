@@ -1,6 +1,82 @@
-/* styles.css - starting point for advanced styling */
+/* Reset بسيط */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+header .logo img {
+  height: 40px; /* عدّل الرقم حسب Figma */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #007bff; /* عدّل للون الرئيسي من Figma */
+}
+
+/* ========== BANNER / HERO ========== */
+.banner {
+  height: 80vh; /* أو حسب التصميم */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("images/banner.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.banner h1 {
+  font-size: 3rem; /* عدّل حسب Figma */
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.banner .btn {
+  background-color: #007bff; /* اللون الأساسي */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.banner .btn:hover {
+  background-color: #0056b3; /* درجة أغمق */
 }
