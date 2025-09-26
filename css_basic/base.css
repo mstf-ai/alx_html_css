@@ -1,0 +1,30 @@
+/* base.css */
+
+/* Reset margin & padding */
+body {
+	    margin: 0;
+	        padding: 0;
+		    font-family: Arial, Helvetica, sans-serif;
+		        line-height: 1.6;
+		}
+
+		/* Basic layout */
+		header, main, footer {
+			    padding: 20px;
+			        margin: 10px;
+			}
+
+			/* Navigation links */
+			nav a {
+				    margin-right: 15px;
+				        text-decoration: none;
+					    color: #333;
+				    }
+
+				    /* Footer style */
+				    footer {
+					        text-align: center;
+						    font-size: 14px;
+						        color: #666;
+						}
+
