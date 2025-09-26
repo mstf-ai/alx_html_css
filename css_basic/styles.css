@@ -35,3 +35,45 @@ header, footer {
     background-color: #eaeaea;
     text-align: center;
 }
+
+/* Logo styling */
+.logo {
+    font-size: 2rem;       /* يخلي اللوجو أكبر */
+    font-weight: bold;     /* سميك */
+    color: #0077cc;        /* أزرق */
+    margin-right: 20px;    /* مسافة بينه وبين العناصر اللي بعده */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    color: #333; /* لون النص */
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Article & Aside */
+article {
+    padding: 15px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+}
+
+aside {
+    padding: 15px;
+    background: #f0f0f0;
+}
