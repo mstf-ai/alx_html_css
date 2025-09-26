@@ -80,3 +80,44 @@ header nav ul li a:hover {
 .banner .btn:hover {
   background-color: #0056b3; /* درجة أغمق */
 }
+
+/* ========== QUOTES SECTION ========== */
+.quotes {
+  background-color: #f9f9f9; /* عدّل اللون حسب Figma */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quotes blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.quotes blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  color: #007bff; /* اللون الأساسي */
+  position: absolute;
+  left: -15px;
+  top: -10px;
+}
+
+.quotes blockquote::after {
+  content: "”";
+  font-size: 3rem;
+  color: #007bff;
+  position: absolute;
+  right: -15px;
+  bottom: -10px;
+}
+
+.quotes .author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
