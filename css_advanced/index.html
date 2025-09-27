@@ -2,114 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Advanced CSS Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile School</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- HEADER -->
+
+  <!-- Header -->
   <header>
-    <div class="logo">
-      <img src="https://dummyimage.com/120x40/000/fff&text=LOGO" alt="Website Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Smile School</h1>
   </header>
 
-  <!-- HERO / BANNER -->
-  <section class="banner">
-    <div>
-      <h1>Welcome to TechCon 2024</h1>
-      <p>The leading tech conference bringing together innovators, developers, and entrepreneurs.</p>
-      <a href="#register" class="btn">Register Now</a>
+  <!-- Quotes Section -->
+  <section class="quote">
+    <div class="quote-container">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Person" class="quote-img">
+      <blockquote>
+        « Those tutorials are concise and go straight to the point. I can’t think of a better
+        place to learn smiling. And it’s so fun! »
+      </blockquote>
+      <p class="quote-author">Phillip Massey</p>
+      <p class="quote-role">Weather Presenter</p>
     </div>
   </section>
 
-  <!-- VIDEOS -->
+  <!-- Videos Section -->
   <section class="videos">
-    <h2 class="section-title">Most <span>popular</span> tutorials</h2>
-    <div class="video-list">
+    <h2>Most <span class="highlight">popular</span> tutorials</h2>
+    <div class="videos-container">
       <div class="video-card">
-        <div class="video-thumbnail">
-          <img src="https://source.unsplash.com/400x250/?smile" alt="Diagonal Smile">
-          <div class="play-btn">▶</div>
-        </div>
+        <img src="https://picsum.photos/300/200?random=1" alt="Diagonal Smile">
         <h3>Diagonal Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="video-card">
-        <div class="video-thumbnail">
-          <img src="https://source.unsplash.com/400x250/?happy" alt="Sad Smile">
-          <div class="play-btn">▶</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="video-info">
+          <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Phillip Massey" class="author-img">
+          <span>Phillip Massey</span>
         </div>
+        <div class="video-meta">
+          <span class="rating">★★★★★</span>
+          <span class="duration">8 min</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="https://picsum.photos/300/200?random=2" alt="Sad Smile">
         <h3>Sad Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="video-card">
-        <div class="video-thumbnail">
-          <img src="https://source.unsplash.com/400x250/?natural" alt="Natural Smile">
-          <div class="play-btn">▶</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="video-info">
+          <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Phillip Massey" class="author-img">
+          <span>Phillip Massey</span>
         </div>
+        <div class="video-meta">
+          <span class="rating">★★★★★</span>
+          <span class="duration">8 min</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="https://picsum.photos/300/200?random=3" alt="Natural Smile">
         <h3>Natural Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="video-card">
-        <div class="video-thumbnail">
-          <img src="https://source.unsplash.com/400x250/?laugh" alt="Happy Smile">
-          <div class="play-btn">▶</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="video-info">
+          <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Phillip Massey" class="author-img">
+          <span>Phillip Massey</span>
         </div>
+        <div class="video-meta">
+          <span class="rating">★★★★★</span>
+          <span class="duration">8 min</span>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="https://picsum.photos/300/200?random=4" alt="Happy Smile">
         <h3>Happy Smile</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="video-info">
+          <img src="https://randomuser.me/api/portraits/women/34.jpg" alt="Phillip Massey" class="author-img">
+          <span>Phillip Massey</span>
+        </div>
+        <div class="video-meta">
+          <span class="rating">★★★★★</span>
+          <span class="duration">8 min</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIAL -->
-  <section class="testimonial">
-    <div class="testimonial-content">
-      <img src="https://i.pravatar.cc/100?img=12" alt="Person Photo" class="testimonial-img">
-      <div class="testimonial-text">
-        <p class="quote">
-          « Those tutorials are concise and go straight to the point.  
-          I can’t think of a better place to learn smiling. And it’s so fun! »
-        </p>
-        <p class="person-name">Person Name</p>
-        <p class="person-role">weather presenter</p>
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>How do I register?</h3>
+        <p>You can register by clicking the sign-up button on the top right corner and filling out your information.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need to pay to access tutorials?</h3>
+        <p>Some tutorials are free, while premium ones require a subscription.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I watch videos offline?</h3>
+        <p>Yes! With our premium subscription, you can download videos and watch them offline.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you provide certificates?</h3>
+        <p>Yes, after completing certain courses you will receive a certificate of completion.</p>
       </div>
     </div>
-  </section>
-
-  <!-- MEMBERSHIP -->
-  <section class="membership">
-    <h2><span>Free</span> membership</h2>
-    <div class="membership-list">
-      <div class="membership-item">
-        <div class="icon">😊</div>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="membership-item">
-        <div class="icon">😊</div>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="membership-item">
-        <div class="icon">😊</div>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="membership-item">
-        <div class="icon">😊</div>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <a href="#register" class="btn-membership">REGISTER FOR FREE</a>
   </section>
 
 </body>
